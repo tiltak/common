@@ -30,4 +30,5 @@ jobs:
           files: |
             LICENSE.txt
             staging/*.jar
+      - run: mvn --batch-mode --update-snapshots deploy
 
