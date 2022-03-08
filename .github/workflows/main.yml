@@ -21,9 +21,13 @@ jobs:
         with:
           name: Package
           path: staging
-      - name: deploy artifacts
-        uses: actions/upload-artifact@v2
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          name: github-actions-artifact
-          path: staging
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            LICENSE.txt
+            staging/*.jar
 
