@@ -67,7 +67,8 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/magnusev/tiltak/common</url>
+            <url>https://maven.pkg.github.com/magnusev/maven-packages</url>
+            <uniqueVersion>true</uniqueVersion>
         </repository>
     </distributionManagement>
 
